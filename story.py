@@ -1,30 +1,30 @@
+# Plamere waz here lmao
+
 import streamlit as st
 import random
 
-#replace with openai api
 def generate_story():
-    # Add your story elements or fetch them from a database/API
-    characters = ["Alice", "Bob", "Charlie", "David"]
-    places = ["a small village", "a big city", "a magical kingdom", "an ancient forest"]
-    actions = ["discovered a hidden treasure", "saved the day", "embarked on a mysterious journey", "learned a valuable lesson"]
+    # Random story stuff
+    characters = ["Palmer", "Sawyer"]
+    places = ["a Coca Cola factory", "Home Depot", "McDonalds", "the White House", "Calvin University", "Hope College"]
+    antagonists = ["the IRS", "Joe Biden", "Taylor Swift", "the French"]
 
-    # Generate a random story
+    # Generate a random bs story
     character = random.choice(characters)
     place = random.choice(places)
-    action = random.choice(actions)
+    antagonist = random.choice(antagonists)
 
-    story = f"{character} was in {place} and {action}."
+    story = f"{character} went to {place} to do battle with {antagonist}."
 
     return story
 
-# Streamlit app
+# Streamlit app yaaay :D
 def main():
     st.title("Story Generator")
 
-    # Button to generate a new story
+    # Button to generate new story
     if st.button("Generate Story"):
 
-        #replace with openai api
         story = generate_story()
 
         st.write("Your Story:")
