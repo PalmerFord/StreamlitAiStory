@@ -1,15 +1,14 @@
 import streamlit as st
 from openai import OpenAI
-# from dotenv import load_dotenv
-# import os
+from dotenv import load_dotenv
+import os
 
 # Load environment variables from the .env file
-# load_dotenv()
+load_dotenv()
 
 # Set your OpenAI API key using st.secrets
-openai_secret = st.secrets["openai"]
 client = OpenAI()
-client.api_key = openai_secret["api_key"]
+client.api_key = os.getenv("OPENAI_API_KEY")
 
 # Streamlit app
 def main():
