@@ -1,14 +1,15 @@
 import streamlit as st
 from openai import OpenAI
-from dotenv import load_dotenv
-import os
+# from dotenv import load_dotenv
+# import os
 
 # Load environment variables from the .env file
-load_dotenv()
+# load_dotenv()
 
-# Set your OpenAI API key
+# Set your OpenAI API key using st.secrets
+openai_secret = st.secrets["openai"]
 client = OpenAI()
-client.api_key = os.getenv("OPENAI_API_KEY")
+client.api_key = openai_secret["api_key"]
 
 # Streamlit app
 def main():
@@ -63,7 +64,7 @@ def generate_story(main_characters, supporting_characters, settings, antagonists
             },
         ],
         temperature=1.1,
-        max_tokens=100,
+        # max_tokens=100,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
