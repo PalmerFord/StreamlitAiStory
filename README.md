@@ -1,5 +1,5 @@
 # StreamlitAiStory
-
+# storygen.streamlit.app
 pip install streamlit
 
 pip install openai
