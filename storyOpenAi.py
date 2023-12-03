@@ -15,7 +15,7 @@ def main():
     st.title("Story Generator:")
 
     # Dropdown for selecting the tone
-    tone = st.selectbox("Select Tone", ["normal", "funny", "serious", "sad", "absurd"])
+    tone = st.selectbox("Select Story Tone", ["normal", "funny", "serious", "sad", "absurd"])
 
     # User input form
     main_characters = st.text_input("Main Character(s):")
