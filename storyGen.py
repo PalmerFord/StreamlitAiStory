@@ -1,3 +1,6 @@
+# Made by Palmer Ford 
+# December 2, 2023
+
 import streamlit as st
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -12,12 +15,19 @@ client.api_key = os.getenv("OPENAI_API_KEY")
 
 # Streamlit app
 def main():
-    st.title("AI Story Generator:")
+    st.set_page_config(
+        page_title="AI Story Generator",
+        page_icon="📚",
+        layout="centered",
+        initial_sidebar_state="collapsed",
+        menu_items={
+            'About': "Made by [Palmer Ford](https://github.com/PalmerFord)"
+        }
+    )
 
-    # Dropdown for selecting the tone
+    st.title('AI Story Generator')
+
     tone = st.selectbox("Select Story Tone", ["normal", "funny", "serious", "sad", "acid trip"])
-
-    # User input form
     main_characters = st.text_input("Main Character(s):")
     supporting_characters = st.text_input("Supporting Character(s):")
     settings = st.text_input("Setting(s):")
@@ -44,8 +54,6 @@ def generate_story(main_characters, supporting_characters, settings, antagonists
         "serious": "You are an internet story writer that writes serious short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable.  ",
         "sad": "You are an internet story writer that writes sad short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable. Your stories are all tragedies.",
         "acid trip": "You are an internet story writer that crafts completely unpredictable, absurd, acid trip tales and likes to add additional elements to a story to make it more insane and unpredictable. The villain names you come up with are always completly unhinged."
-
-
     }
 
     # OpenAI API call
