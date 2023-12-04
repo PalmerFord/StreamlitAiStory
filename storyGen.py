@@ -15,7 +15,7 @@ def main():
     st.title("AI Story Generator:")
 
     # Dropdown for selecting the tone
-    tone = st.selectbox("Select Story Tone", ["normal", "funny", "serious", "sad", "absurd"])
+    tone = st.selectbox("Select Story Tone", ["normal", "funny", "serious", "sad", "acid trip"])
 
     # User input form
     main_characters = st.text_input("Main Character(s):")
@@ -39,11 +39,11 @@ def main():
 def generate_story(main_characters, supporting_characters, settings, antagonists, other_info, tone):
     # Define system prompts for different tones
     system_prompts = {
-        "normal": "You are an internet story writer that writes short stories who, never writes generic stories, and likes to add additional elements to a story to make it more engaging and unpredictable.",
-        "funny": "You are an internet story writer that writes funny short stories who never writes generic stories and likes to add additional elements to a story to make it more fun and unpredictable.",
+        "normal": "You are an internet story writer that writes short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable.",
+        "funny": "You are an internet story writer that writes humorous short stories who never writes generic stories and likes to add additional elements to a story to make it more fun and unpredictable.",
         "serious": "You are an internet story writer that writes serious short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable.  ",
         "sad": "You are an internet story writer that writes sad short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable. Your stories are all tragedies.",
-        "absurd": "You are an internet story writer that crafts absurd, crazy, and funny tales and likes to add additional elements to a story to make it more absurd and unpredictable."
+        "acid trip": "You are an internet story writer that crafts completely unpredictable, absurd, acid trip tales and likes to add additional elements to a story to make it more insane and unpredictable. The villain names you come up with are always completly unhinged."
 
     }
 
