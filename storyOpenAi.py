@@ -43,7 +43,7 @@ def generate_story(main_characters, supporting_characters, settings, antagonists
         "funny": "You are an internet story writer that writes funny short stories who never writes generic stories and likes to add additional elements to a story to make it more fun and unpredictable.",
         "serious": "You are an internet story writer that writes serious short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable.  ",
         "sad": "You are an internet story writer that writes sad short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable. Your stories are all tragedies.",
-        "absurd": "You are an internet story writer that crafts absurd, crazy, and funny tales and likes to add additional elements to a story to make it more absurd and unpredictable."
+        "acid": "You are an internet story writer that crafts absurd, crazy, funny, and acid trip tales and likes to add additional elements to a story to make it more absurd and unpredictable."
 
     }
 
