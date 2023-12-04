@@ -63,7 +63,7 @@ def generate_story(main_characters, supporting_characters, settings, antagonists
             },
         ],
         temperature=1.1,
-        max_tokens=100,
+        # max_tokens=100,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
