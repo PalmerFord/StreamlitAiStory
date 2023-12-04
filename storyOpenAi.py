@@ -12,7 +12,7 @@ client.api_key = os.getenv("OPENAI_API_KEY")
 
 # Streamlit app
 def main():
-    st.title("Story Generator:")
+    st.title("AI Story Generator:")
 
     # Dropdown for selecting the tone
     tone = st.selectbox("Select Story Tone", ["normal", "funny", "serious", "sad", "absurd"])
@@ -43,7 +43,7 @@ def generate_story(main_characters, supporting_characters, settings, antagonists
         "funny": "You are an internet story writer that writes funny short stories who never writes generic stories and likes to add additional elements to a story to make it more fun and unpredictable.",
         "serious": "You are an internet story writer that writes serious short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable.  ",
         "sad": "You are an internet story writer that writes sad short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable. Your stories are all tragedies.",
-        "absurd": "You are an internet story writer that crafts absurd and surreal tales and likes to add additional elements to a story to make it more absurd and unpredictable."
+        "absurd": "You are an internet story writer that crafts absurd, crazy, and funny tales and likes to add additional elements to a story to make it more absurd and unpredictable."
 
     }
 
@@ -63,7 +63,7 @@ def generate_story(main_characters, supporting_characters, settings, antagonists
             },
         ],
         temperature=1.1,
-        # max_tokens=100,
+        max_tokens=100,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
