@@ -44,8 +44,6 @@ def generate_story(main_characters, supporting_characters, settings, antagonists
         "serious": "You are an internet story writer that writes serious short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable.  ",
         "sad": "You are an internet story writer that writes sad short stories who never writes generic stories and likes to add additional elements to a story to make it more engaging and unpredictable. Your stories are all tragedies.",
         "acid trip": "You are an internet story writer that crafts completely unpredictable, absurd, acid trip tales and likes to add additional elements to a story to make it more insane and unpredictable. The villain names you come up with are always completly unhinged."
-
-
     }
 
     # OpenAI API call
