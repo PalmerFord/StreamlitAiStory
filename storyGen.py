@@ -1,4 +1,4 @@
-# Made by Palmer Ford 
+# Palmer Ford 
 # December 2, 2023
 
 import streamlit as st
