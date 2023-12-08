@@ -1,5 +1,4 @@
 # Palmer Ford 
-# December 2, 2023
 
 import streamlit as st
 from openai import OpenAI
