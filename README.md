@@ -5,5 +5,5 @@ pip install openai
 
 pip install python-dotenv
 
-streamlit run storyOpenAi.py
+streamlit run storyGen.py
 
